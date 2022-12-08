@@ -1,0 +1,156 @@
+# Site settings
+title: August Blog
+SEOTitle: 八月博客 | August Blog
+header-img: img/black-bg.jpg
+email: sumcai@163.com
+description: "八月博客 | Software Engineer"
+keyword: "C++,互联网,后端"
+url: "sumcai.github.io"          # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: true
+weibo_username:     sumcai
+zhihu_username:     sumcai
+github_username:    sumcai
+# twitter_username:   huxpro
+# facebook_username:  huxpro
+# linkedin_username:  suksli
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+# disqus_username: etmoon
+
+# Netease settings
+netease_comment: false
+
+# LiveRe setttings
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+# livere_uid: MTAyMC8yODk5MC81NTU5
+
+valine_comment: 
+  enable: true
+  leancloud_appid: U24f6pItYFGdkT6HD1gDFtGQ-9Nh9j0Va
+  leancloud_appkey: qng12LPr1OxxkRiFg7VK1AyA
+  placeholder: Say something...
+  visitor: true
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+# ga_track_id: 'UA-85794354-1'            # Format: UA-xxxxxx-xx
+# ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "<b>To the very best of times</b><br><b>致那些最好的时光</b>"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends: [
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me/"
+    },{
+        title: "三颗豆子",
+        href: "http://www.bewindoweb.com/"
+    },{
+        title: "Sanarous's Blog",
+        href: "https://bestzuo.cn/links"
+    },{
+        title: "一极乐",
+        href: "https://yijile.com/"
+    },{
+        title: "Hello Alili",
+        href: "https://alili.tech/"
+    },{
+        title: "Geniucker's Blog",
+        href: "https://geniucker.js.org/"
+    },{
+        title: "Deserts",
+        href: "https://deserts.io/"
+    },{
+        title: "Caedmom Blog",
+        href: "https://caedmom.github.io/"
+    },{
+        title: "小马哥的技术博客",
+        href: "https://mercyblitz.github.io/"
+    },{
+        title: "CodeKissYoung Blog",
+        href: "https://blog.codekissyoung.com/"
+    },{
+        title: "MINT FORGE",
+        href: "https://kevinjobs.github.io/"
+    },{
+        title: "丁小未",
+        href: "http://dingxiaowei.cn/"
+    },{
+        title: "码志",
+        href: "https://mazhuang.org/"
+    },{
+        title: "崔庆才的个人站点",
+        href: "https://cuiqingcai.com/"
+    }
+]

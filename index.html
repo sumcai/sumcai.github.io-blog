@@ -1,0 +1,62 @@
+---
+layout: page
+author: suksli
+description: "这里将深入探讨相关技术，包括行业动态，架构设计，设计模式，框架使用，源码分析等。"
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+        </span>
+        <span class="fa-wrap">
+            <i class="fa fa-tags" aria-hidden="true"> {{ post.tags | join: ', ' }} </i>
+        </span>
+        <span id="{{ post.url }}" class="leancloud-visitors fa-wrap" data-flag-title="{{ post.title }}">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <i class="leancloud-visitors-count fa-wrap"></i>
+        </span>
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- 用valine接收阅读统计 -->
+{% if site.valine_comment.enable %}
+    {% include valine_comment.html %}
+{% endif %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
