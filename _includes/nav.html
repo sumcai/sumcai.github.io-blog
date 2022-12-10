@@ -37,11 +37,9 @@
                         <li>
                             <a href="{{ site.baseurl }}/wiki.html">WIKI</a>
                         </li>
-                        <li class="search-icon">
-                            <a href="javascript:void(0)">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
+						<li>
+							<a href="javascript:void(0)" class="fa fa-search navbar-brand search-icon" id="search-ic"></a>
+						</li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +47,25 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    
+<!-- Search Box -->
+<div class="search-box hidden">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" autocomplete="off" id="search-input" class="search" placeholder="Search..." maxlength="20" onkeypress="return onKeyPress(event)">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search">
+      </ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+    
     <script>
         // Drop Bootstarp low-performance Navbar
         // Use customize navbar with high-quality material design animation
