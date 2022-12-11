@@ -23,8 +23,8 @@ github_username:    sumcai
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
-paginate: 5
-paginate_path: pagination/page:num/
+paginate: 10
+paginate_path: page:num/
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
@@ -108,6 +108,10 @@ friends: [
         title: "三颗豆子",
         href: "http://www.bewindoweb.com/"
     },{
+        title: "soptq",
+        href: "https://soptq.me/"
+    },
+    {
         title: "Sanarous's Blog",
         href: "https://bestzuo.cn/links"
     },{

@@ -51,7 +51,7 @@ description: "这里将深入探讨相关技术，包括行业动态，架构设
 {% endif %}
 
 <!-- Pager -->
-{% if paginator.total_pages > 1 %}
+<!-- {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
@@ -63,5 +63,32 @@ description: "这里将深入探讨相关技术，包括行业动态，架构设
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
     </li>
     {% endif %}
+</ul>
+{% endif %} -->
+
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+  {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt;</a></li>
+  {% else %}
+    <li><span>&lt;</span></li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li><span class="active" aria-label="Page 1">{{ page }}</span></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ site.paginate_path | prepend: '/' | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&gt;</a></li>
+  {% else %}
+    <li><span>&gt;</span></li>
+  {% endif %}
 </ul>
 {% endif %}

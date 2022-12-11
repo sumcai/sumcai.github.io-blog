@@ -1416,8 +1416,10 @@ form .row:first-child .floating-label-form-group {
   color: white;
 }
 .pager {
-  margin: 20px 0 0 !important;
-  padding: 0px !important;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 0;
+  padding: 20px 0 15px;
 }
 .pager li > a,
 .pager li > span {
@@ -1433,13 +1435,19 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 1px;
   padding: 10px;
   background-color: white;
-  border-radius: 0;
+  border-radius: 50%;
+}
+.pager li .active {
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+  color: #fff;
+  border-radius: 50%!important;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
   .pager li > span {
     font-size: 14px;
-    padding: 15px 25px;
+    padding: 3px 9px;
   }
 }
 .pager li > a {
