@@ -27,7 +27,7 @@ description: "这里将深入探讨相关技术，包括行业动态，架构设
  
     <div class="post-meta tags">
         {% for tag in post.tags %}
-        <a class="tag" href="{{ site.baseurl }}archive/?tag={{ tag | url_encode }}" title="{{ tag }}">{{ tag }}</a>
+        <a class="tag" href="/archive/?tag={{ tag | url_encode }}" title="{{ tag }}">{{ tag }}</a>
         {% endfor %}
 
         <div class="post-meta-other">
@@ -75,7 +75,15 @@ description: "这里将深入探讨相关技术，包括行业动态，架构设
     <li><span>&lt;</span></li>
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
+  {% assign min_page = paginator.page | minus: 2 %}
+  {% assign max_page = paginator.page | plus : 2 %}
+  {% if min_page < 1 %}
+      {% assign min_page = 1 %}
+  {% endif %}
+  {% if max_page > paginator.total_pages %}
+      {% assign max_page = paginator.total_pages %}
+  {% endif %}
+  {% for page in (min_page..max_page) %}
     {% if page == paginator.page %}
       <li><span class="active" aria-label="Page 1">{{ page }}</span></li>
     {% elsif page == 1 %}

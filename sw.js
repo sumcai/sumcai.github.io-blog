@@ -22,8 +22,6 @@ const PRECACHE_LIST = [
   "./js/Valine.min.js",
   "./js/av-min.js",
   "./img/avatar.jpg",
-  "./img/bg.jpg",
-  "./img/404-bg.jpg",
   "./css/font-awesome.min.css",
   "./css/hux-blog.min.css",
   "./css/bootstrap.min.css"
