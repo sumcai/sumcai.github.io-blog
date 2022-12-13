@@ -139,7 +139,7 @@
         {% else %}
         <div class="site-heading">
         {% endif %}
-          <div style="font-size:50px; font-weight:bold;">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</div>
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
           <span class="subheading">{{ page.description }}</span>
         </div>
       </div>

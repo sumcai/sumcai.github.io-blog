@@ -1,6 +1,6 @@
 <!-- Navigation -->
 {% if page.nav-style == "invert" or page.header-style == "text" %}
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert or site.global-text-header">
     {% else %}
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         {% endif %}
@@ -16,7 +16,7 @@
 
                 <a class="navbar-log" href="{{ site.baseurl }}/">
                     <div style="float:left; padding-left: 10px;">
-                        <img src="/img/logo.png" height="56"/>
+                        <img src="/img/logo.png" class="logo-style"/>
                     </div>
                 </a>
             </div>
