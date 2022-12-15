@@ -1,9 +1,16 @@
 ---
 layout: post
-title:  "用Github+Jekyll搭建个人博客"
-author: "sumcai"
-header-style: text 
-tags: [website, jekyll]
+title: 用Github+Jekyll搭建个人博客
+author: sumcai
+header-style: text
+article: false
+tags: 
+  - website
+date: 2020-12-11 15:23:39
+permalink: /other/jekyllblog/
+categories: 
+  - 工具使用
+  - 建站
 ---
 
 在信息爆炸的当今社会，技术发展日新月异，不时刻保持学习很快就会跟不上时代步伐。我很久之前就希望有一个自己的个人网站来收集平时看到的一些好的文章、教程，把这些零碎的信息都变成自己的收藏，当下一次需要查阅时，不至于穷死苦想在哪看过。如果有了自己的网站，加上分类和搜索，能快速查到自己想找的内容，那该多么令人兴奋呀！经过一段时间的摸索，找到了一个免费而且便捷的方式搭建个人博客，具备分类和查找功能，而且还免费、稳健可靠，那就是通过 Github/Gitee + jekyll 搭建。
@@ -81,7 +88,7 @@ jekyll server       #运行服务器
 上面的`jekyll new blog`可能会很慢，使用`jekyll new blog --skip-bundle`跳过bundle环节，然后修改新blog目录中的Gemfile，将第一行改成`source "https://gems.ruby-china.com"`，再运行`bundle install`即可完成项目创建。
 
 访问测试：http://127.0.0.1:4000/
-![](/assets/img/image-20201206162544.png)
+![](https://objectstorage.ap-osaka-1.oraclecloud.com/n/ax0kqy8quzyr/b/bucket-blog/o/2022/04/9587fdb0fc918f47e195c309d3d11151.png)
 
 ---
 

@@ -1,7 +1,14 @@
 ---
 layout: post
-title:  "Hello August"
-tags: [杂谈]
+title: Hello August
+article: false
+tags: 
+  - 随笔
+date: 2020-10-08 15:23:39
+permalink: /other/buildwebsite/
+categories: 
+  - 工具使用
+  - 建站
 ---
 
 ## 博客开通
@@ -26,6 +33,8 @@ tags: [杂谈]
 * 有新留言时可发送邮件通知
 
 期待能够写出很多优质的文章，也希望能与志同道合者多多交流，有任何问题可以用如下方式与我联系。
+
+
 
 ## 联系我
 

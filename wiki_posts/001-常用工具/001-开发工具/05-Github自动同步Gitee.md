@@ -1,3 +1,17 @@
+---
+layout: post
+title: GitHub自动同步到Gitee
+author: sumcai
+header-style: text
+article: false
+tags: 
+  - git
+date: 2021-01-15 15:23:40
+categories: 
+  - 工具使用
+permalink: /other/githubtogitee/
+---
+
 # GitHub自动同步到Gitee
 
 对于广大程序员来说，github已成为每天必不可少的工具，但是在国内又难以忍受龟速，有一个不错的解决方法是使用Gitee作为桥梁，从Github导入仓库到Gitee，直接在Gitee上进行操作。今天我要介绍的是提交到Github时怎么触发代码自动同步到Gitee，这个功能主要用在Gitee Page的更新，因为Github Page是自动更新的，即博客更新了markdown文件后网站是自动更新的，而Gitee page需要手工更新才行，只有Pro版本才可以自动更新（当然是收费的），这里不得不吐槽一下国内的厂商，对于广大开发者来说，白嫖太难。
