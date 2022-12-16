@@ -21,7 +21,7 @@ const PRECACHE_LIST = [
   "./static/js/hux-blog.min.js",
   "./static/js/snackbar.js",
   "./static/js/Valine.min.js",
-  "./static/js/av-min.js",
+  // "./static/js/av-min.js",
   "./static/img/avatar.jpg",
   "./static/css/font-awesome.min.css",
   "./static/css/hux-blog.min.css",
