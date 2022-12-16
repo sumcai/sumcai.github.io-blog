@@ -21,11 +21,7 @@
     - [图片边缘羽化](?file=001-常用工具/002-PhotoShop/04-图片边缘羽化 "图片边缘羽化")
     - [抠图制作矢量图](?file=001-常用工具/002-PhotoShop/05-抠图制作矢量图 "抠图制作矢量图")
 
-##### 基础知识
-- **数学基础**
-    - [正弦余弦公式](?file=002-基础知识/001-数学基础/0001-正弦余弦公式 "正弦余弦公式")
-
 ##### 异常报错
 - **常用软件**
-    - [jekyll本地预览报not found](?file=003-异常报错/001-常用软件/01-jekyll本地预览报not found "jekyll本地预览报not found")
-    - [vscode插件编译报错TS2307](?file=003-异常报错/001-常用软件/02-vscode插件编译报错TS2307 "vscode插件编译报错TS2307")
+    - [jekyll本地预览报not found](?file=002-异常报错/001-常用软件/0001-jekyll本地预览报not found "jekyll本地预览报not found")
+    - [vscode插件编译报错TS2307](?file=002-异常报错/001-常用软件/0002-vscode插件编译报错TS2307 "vscode插件编译报错TS2307")

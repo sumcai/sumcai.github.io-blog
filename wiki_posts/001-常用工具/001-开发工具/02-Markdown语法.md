@@ -1,16 +1,3 @@
----
-title: Markdown语法
-author: sumcai
-article: false
-tags: 
-  - markdown
-date: 2021-01-12 15:23:40
-categories: 
-  - 工具使用
-permalink: /other/markdown/
----
-
-
 # Markdown 快速开始
 
 ## 一、快捷键

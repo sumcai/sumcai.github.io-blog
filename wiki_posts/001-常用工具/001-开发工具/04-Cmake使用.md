@@ -1,17 +1,3 @@
----
-layout: post
-title: Cmake 详解
-author: sumcai
-header-style: text
-article: false
-tags: 
-  - cmake
-date: 2021-01-14 15:23:40
-categories: 
-  - 工具使用
-permalink: /other/cmake/
----
-
 # Cmake 详解
 
 本文记录了`cmake`的用法。

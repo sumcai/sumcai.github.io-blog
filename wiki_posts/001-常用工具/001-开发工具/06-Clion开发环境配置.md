@@ -1,15 +1,3 @@
----
-title: Clion开发环境配置
-author: sumcai
-article: false
-tags: 
-  - 开发工具
-categories: 
-  - 工具使用
-date: 2021-11-19 19:32:39
-permalink: /other/clion/
----
-
 ## Clion
 
 ### 主题配置

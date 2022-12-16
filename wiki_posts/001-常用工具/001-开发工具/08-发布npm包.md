@@ -1,14 +1,3 @@
----
-title: 发布npm包
-article: false
-categories: 
-  - 工具使用
-tags: 
-  - npm
-date: 2021-12-25 22:32:01
-permalink: /other/npm/
----
-
 # 发布npm包
 
 ## 什么是npm

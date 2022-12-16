@@ -1,14 +1,3 @@
----
-title: VSCode开发换配置
-date: 2021-11-20 20:28:19
-permalink: /other/vscodecpp/
-article: false
-categories:
-  - 工具使用
-tags:
-  - VSCode
----
-
 ## vscode+cmake配置C/C++环境
 
 记录一下如何利用vscode和cmake配置C/C++环境，话不多说直接上手。

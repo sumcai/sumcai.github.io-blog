@@ -1,14 +1,3 @@
----
-title: zotero+bookxnote
-article: false
-categories: 
-  - 工具使用
-tags: 
-  - zotero
-date: 2022-01-02 21:18:13
-permalink: /other/zotero/
----
-
 # 使用方式
 
 实现一个多端同步的使用方式

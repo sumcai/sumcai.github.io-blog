@@ -1,18 +1,3 @@
----
-layout: post
-title: Jekyll新增文章本地预览时报 not found
-author: sumcai
-header-style: text
-article: false
-tags: 
-  - website
-date: 2021-01-08 15:23:40
-categories: 
-  - 工具使用
-  - 建站
-url: /other/jekyllerror/
----
-
 # Jekyll新增文章本地预览时报 not found
 
 ## <i class="fa fa-question-circle"></i> 问题描述

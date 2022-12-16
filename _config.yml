@@ -85,7 +85,7 @@ valine_comment:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "<b>To the very best of times</b><br><b>致那些最好的时光</b>"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /static/img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

@@ -21,22 +21,22 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ " /js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
-<script src="{{ " /js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ " /js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Simple Jekyll Search -->
-<script src="{{ " /js/simple-jekyll-search.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/simple-jekyll-search.min.js" | prepend: site.baseurl }}"></script>
 
 <!-- Service Worker -->
 {% if site.service-worker %}
-<script src="{{ " /js/snackbar.js " | prepend: site.baseurl }}"></script>
-<script src="{{ " /js/sw-registration.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/snackbar.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/sw-registration.js " | prepend: site.baseurl }}"></script>
 {% endif %}
 
 <!-- async load function -->
@@ -95,7 +95,7 @@
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
 <script>
-    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
+    async('{{ "/static/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
         $.fn.tagcloud.defaults = {
             //size: {start: 1, end: 1, unit: 'em'},
             color: { start: '#ffffff', end: '#ffffff' },
@@ -103,7 +103,7 @@
         $('#tag_cloud a').tagcloud();
     })
 </script>
-<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
+<script src='{{ "/static/js/archive.js " | prepend: site.baseurl }}'></script>
 {% endif %}
 
 <!--fastClick.js -->
@@ -197,7 +197,7 @@
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
      * Fork by Hux to support padding
      */
-    async("{{ '/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
+    async("{{ '/static/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
         $('.catalog-body').onePageNav({
             currentClass: "active",
             changeHash: !1,
@@ -239,7 +239,7 @@
         SimpleJekyllSearch({
             searchtext: question,
             resultsContainer: document.getElementById('results-container-list'),
-            json: '/search.json',
+            json: '/staitc/search.json',
             searchResultTemplate: '<li>\n' +
                 '                <div class="cbp_tmlabel result">\n' +
                 '                    <a href="{url}">\n' +
@@ -261,7 +261,7 @@
         SimpleJekyllSearch({
             searchInput: document.getElementById('search-input'),
             resultsContainer: document.getElementById('results-container'),
-            json: '/search.json',
+            json: '/static/search.json',
             searchResultTemplate: '<li><a href="{url}" style="display:block;width: 100%;padding-left:10px; padding-right:10px;"><i class="fa fa-angle-double-right fa-border" aria-hidden="true"></i>    {title}</a></li>',
             noResultsText: '',
             fuzzy: false
