@@ -1,7 +1,7 @@
 {
   "name": "八月博客的wiki",
   "ver": "",
-  "logo": "img/logo.png",
+  "logo": "static/img/logo.png",
   "home-page": "wiki.html",
   "imports": [
     "amWiki/css/bwb.css",
